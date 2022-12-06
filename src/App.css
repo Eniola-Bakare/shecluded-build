@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+:root{
+    --primaryColor: #EB2590;
+    --textPrimary: #DD2387;
+    --fadedPrimary: #fbf0f7;
+    --textSecondary: #535659;
+    --secondaryBlack: #000000;
+    --white: #FFFFFF;
+    font-family: 'Lato';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #FFFFFF;
+    /* background-color: #EB2590; */
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Nav bar */
+.navBar-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px; 
+    /* this margin, you might remove it when you get the actual height and can use juc- space-between. */
+}
+.nav-list ul{
+    display: flex;
+    width:auto;
+    padding: 0;
+    justify-content: space-between;
+    gap: 30px;
+}
+li.nav-list-items{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 153.2%;
+    list-style: none;
+    width: fit-content;
+    color: var(--textSecondary);
+}
+.logo-container img{
+    width: 196.1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sign-in-btn{
+    width: 190px;
+    height: 55px;
+    border: 1px solid #EB2590;
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--textPrimary);
+
+    font-size: 20px;
+    line-height: 153.2%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hero section */
+.hero-container-partners{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* tentative margin */
+    margin-bottom: 70px;
 }
+
+.hero-image-div{
+    width: 488.94px;
+    height: 667.04px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-sizing: border-box;
+}
+.hero-image-div img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
+.hero-text-div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.brand-awareness-div{
+    width: 446px;
+    height: 43px;
+    background-color: var(--fadedPrimary);
+    /* opacity: 0.1; */
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-awareness-div p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--primaryColor);
+}
+.brand-awareness-div p span{
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+.hero-text-div h1{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 108%;
+}
+
+.hero-text-div h1 span{
+    color: var(--primaryColor);
+    font-family: 'Playfair Display';
+}
+.hero-description{
+    width: 530px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 174%;
+    color: var(--secondaryBlack);
+}
+
+/* partners section */
