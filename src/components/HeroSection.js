@@ -17,7 +17,9 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="partners">
-        <p>OUR PARTNERS</p>
+        <div>
+          <p>OUR PARTNERS</p> 
+        </div>
         <div className="images-partner">
           <img src={require ('../assets/partners-logo/nft.png')} />
           <img src={require ('../assets/partners-logo/hubspot.png')} />
