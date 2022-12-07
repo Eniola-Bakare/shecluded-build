@@ -2,19 +2,19 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
+    <div className='footer'>
       <div className="div-1-footer">
 				<div className="first-">
-					<img src={require ('../assets/footer/logo-white.png')} />
+					<img className='logo-white' src={require ('../assets/footer/logo-white.png')} />
 					<p>Subscribe to our newsletter</p>
-					<div>
+					<div className='newsletter-div'>
 						<input type="text" placeholder='Email address'/>
 						<button> <img src={require ('../assets/footer/submitArrow.png')} /></button>
 					</div>
 				</div>
 				<div className="second-">
 					<ul>
-						<li className="footer-links">Who We Are</li>
+						<li className="footer-links first-link"><strong>Who We Are</strong></li>
 						<li className="footer-links">About Us</li>
 						<li className="footer-links">What We do</li>
 						<li className="footer-links">Who we serve</li>
@@ -22,7 +22,7 @@ const Footer = () => {
 						<li className="footer-links">Our Services</li>
 					</ul>
 					<ul>
-						<li className="footer-links">Support</li>
+						<li className="footer-links first-link"><strong>Support</strong></li>
 						<li className="footer-links">Help Center</li>
 						<li className="footer-links">FAQs</li>
 						<li className="footer-links">Community</li>
@@ -30,7 +30,7 @@ const Footer = () => {
 						<li className="footer-links">Careers</li>
 					</ul>
 					<ul>
-						<li className="footer-links">Legal</li>
+						<li className="footer-links first-link"><strong>Legal</strong></li>
 						<li className="footer-links">Cookies Policy</li>
 						<li className="footer-links">Privacy Policy</li>
 						<li className="footer-links">Terms of Service</li>
@@ -39,10 +39,12 @@ const Footer = () => {
 				<div className="third-">
 					<div className="socials">
 						<p>Connect with us</p>
-						<button><img src={require ('../assets/footer/IG.png')} /> </button>
-						<button><img src={require ('../assets/footer/twitter.png')} /> </button>
-						<button><img src={require ('../assets/footer/facebook.png')} /> </button>
-						<button><img src={require ('../assets/footer/linkedIn.png')} /> </button>
+						<div className="socials-img">
+							<button><img src={require ('../assets/footer/IG.png')} /> </button>
+							<button><img src={require ('../assets/footer/twitter.png')} /> </button>
+							<button><img src={require ('../assets/footer/facebook.png')} /> </button>
+							<button><img src={require ('../assets/footer/linkedIn.png')} /> </button>
+						</div>
 					</div>
 
 					<div className="install-div">
@@ -56,11 +58,12 @@ const Footer = () => {
 			</div>
 			<div className="div-2-footer">
 				<div className="text-footer">
-					<p> This site uses cookies. <span>Cookies and Privacy.</span> I agree to the <span>terms of use, </span> and the <span>Disclaimer Policy.</span> This information will not be used for marketing purposes.</p>
-					<p>Copyright 2021 Shecluded Solutions Ltd.</p>
+					<p className='cookie-policy'> This site uses cookies. <span>Cookies and Privacy.</span> I agree to the <span>terms of use, </span> and the <span>Disclaimer Policy.</span> This information will not be used for marketing purposes.</p>
+					<hr></hr>
+					<p className='copyright'>Copyright 2021 Shecluded Solutions Ltd.</p>
 				</div>
 			</div>
-    </>
+    </div>
   )
 }
 
