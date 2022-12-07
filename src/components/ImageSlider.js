@@ -4,16 +4,23 @@ import {motion} from 'framer-motion'
 import {useRef, useState, useEffect} from 'react'
 
 const ImageSlider = () => {
-  console.log(images)
+  const [width, setWidth] = useState(0)
+  const carousel = useRef()
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+  }, [])
+
+
   return (
-    <>
-      <div>
-          <motion.div className='carousel'>
-            <motion.div className='inner-carousel'>
+    < >
+      <div className='imageSlider-container'>
+          <motion.div ref={carousel} className='carousel' whileTap={{cursor: 'grabbing'}}>
+            <motion.div drag='x' dragConstraints={{right: 0, left: -width}} className='inner-carousel'>
               {
                 images.map(image => {
                   return(
-                    <motion.div className='item'>
+                    <motion.div className='item' key={image}>
                         <img src={image} alt='images of women'/>
                     </motion.div>
                   )
@@ -21,30 +28,34 @@ const ImageSlider = () => {
               }
             </motion.div>
           </motion.div>
+
+          <div className="imageSlider-text">
+            <p>Enabling Women To Flourish And Grow On Their Journey From Ambititon To Achievement</p>
+            <button className='imageSlider-btn'>JOIN OUR COMMUNITY</button>
+          </div>
       </div>
-      <div className="imageSlider-text">
-        <p>Enabling Women To Flourish And Grow On Their Journey From Ambititon To Achievement</p>
-        <button>JOIN OUR COMMUNITY</button>
-      </div>
+    
 
       {/* building for women - testimonial div */}
       <div className="building-for-women">
-        <div>
+        <div className='build-image-div'>
           <img src={require ('../assets/forWomen.png')} alt="" />
         </div>
-        <div className="4-women-text">
-          <p>Building <span>For Women</span></p>
-          <p>"As my business grew, I knew I had to invest in a better laptop. I didn't have the chunck of money to purchase what I needed; a MacBook, so I reached out to shecluded, and they offered me a good loan and a good payment plan to get what I needed to optimize my process. The loan process and disbursement were fast and seamless."</p>
-          {/* swipe controls */}
-          <div className="swipe-testimonial">
-            <div className="left-swipe">
-              <img src={require ('../assets/leftArrow.png')} />
+        <div className="women-text">
+          <div className='women-text-wrapper'>
+            <p className='women-title'>Building <span>For Women</span></p>
+            <p className='women-desc'>"As my business grew, I knew I had to invest in a better laptop. I didn't have the chunck of money to purchase what I needed; a MacBook, so I reached out to shecluded, and they offered me a good loan and a good payment plan to get what I needed to optimize my process. The loan process and disbursement were fast and seamless."</p>
+            {/* swipe controls */}
+            <div className="swipe-testimonial">
+              <div className="left-swipe swiper">
+                <img src={require ('../assets/rightArrow.png')} />
+              </div>
+              <div className="right-swipe swiper">
+                <img src={require ('../assets/leftArrow.png')} />
+              </div>
             </div>
-            <div className="right-swipe">
-            <img src={require ('../assets/rightArrow.png')} />
-            </div>
+            <p className='swipe-name'>- Excellence</p>
           </div>
-          <p><strong>- Excellence</strong></p>
         </div>
       </div>
 
