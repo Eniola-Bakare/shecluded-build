@@ -154,6 +154,23 @@ li.nav-list-items{
 
 }
 
+.business-here{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+}
+.business-here p{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 108%;
+    margin: 0;
+}
+.business-here img{
+    width: 100%;
+}
 
 /* image slider */
 .imageSlider-container{
@@ -304,6 +321,45 @@ li.nav-list-items{
     font-size: 23.8673px;
     line-height: 183.5%;
     color: #030027;
+}
+
+/* call to download */
+.download-section{
+    width: 1200px;
+    height: 219px;
+    margin: 145px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(91.91deg, #ED1F8E 0%, #FBF2F2 100%);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.download-desc{
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.download-title{
+    margin: 0;
+    font-size: 36px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.download-images{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-images img{
+    width: 168px;
 }
 /* footer design*/
 .footer{

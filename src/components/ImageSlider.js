@@ -62,8 +62,8 @@ const ImageSlider = () => {
       {/* Call to download */}
       <div className="download-section">
         <div className="download-text">
-          <p>START BUILDING TODAY</p>
-          <p>Download the Shecluded app</p>
+          <p className='download-title'>START BUILDING TODAY</p>
+          <p className='download-desc'>Download the Shecluded app</p>
         </div>
         <div className="download-images">
           <img src={require ('../assets/googlePlay.png')} alt="Google Download Icon" />
