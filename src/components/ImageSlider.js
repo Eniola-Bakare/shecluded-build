@@ -42,7 +42,7 @@ const ImageSlider = () => {
           <img src={require ('../assets/forWomen.png')} alt="" />
         </div>
         <div className="women-text">
-          <div className='women-text-wrapper'>
+
             <p className='women-title'>Building <span>For Women</span></p>
             <p className='women-desc'>"As my business grew, I knew I had to invest in a better laptop. I didn't have the chunck of money to purchase what I needed; a MacBook, so I reached out to shecluded, and they offered me a good loan and a good payment plan to get what I needed to optimize my process. The loan process and disbursement were fast and seamless."</p>
             {/* swipe controls */}
@@ -55,7 +55,7 @@ const ImageSlider = () => {
               </div>
             </div>
             <p className='swipe-name'>- Excellence</p>
-          </div>
+         
         </div>
       </div>
 

@@ -18,6 +18,10 @@ const Navbar = () => {
         <div className="sign-in-div">
             <button className="sign-in-btn">Sign In</button>
         </div>
+
+        <div className='hamburger-div'>
+            <img className='hamburger-img' src={require ('../assets/hamburger.png')} alt='hamburger for menu'/>
+        </div>
     </div>
   )
 }

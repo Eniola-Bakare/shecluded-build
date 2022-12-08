@@ -12,7 +12,11 @@
     --white: #FFFFFF;
     font-family: 'Lato';
 }
-
+*img{
+    object-fit: cover;
+    object-position: center;
+    width: 20px;
+}
 body{
     background-color: #FFFFFF;
     /* background-color: #EB2590; */
@@ -70,6 +74,12 @@ li.nav-list-items{
 
     font-size: 20px;
     line-height: 153.2%;
+}
+.hamburger-div,
+.hamburger-img{
+    width: 32px;
+    visibility: hidden;
+    display: none;
 }
 
 /* Hero section */
@@ -206,17 +216,20 @@ li.nav-list-items{
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 25px;
+    justify-content: space-between;
 
     width: 100%;
+    box-sizing: border-box;
     /* height: 705px; */
 
 }
+.blog-text-wrapper{
+    padding: .4em .6em;
+}
 .img-div {
-    width: 609px;
+    width: 48%;
     background: #FAFAFA;
     border-radius: 8px;
-
 
     margin-bottom: 50px;
 }
@@ -231,8 +244,7 @@ li.nav-list-items{
     line-height: 167.7%;
     color: #333333;
 
-    width: 516px;
-    height: 66px;
+    /* height: 66px; */
 }
 .img-div img{
     width: 100%;
@@ -246,6 +258,7 @@ li.nav-list-items{
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 12px;
     
 }
 .view-more img{
@@ -344,13 +357,14 @@ li.nav-list-items{
 /* building for women - testimonial */
 .building-for-women{
     width: 100%;
-    height: 794px;
+    /* height: 794px; */
     background: #FFFFFF;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 
 }
 .build-image-div{
@@ -364,17 +378,10 @@ li.nav-list-items{
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.women-text-wrapper{
-    width: 540px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
+
 .women-title {
     font-weight: 400;
     font-size: 46px;
@@ -382,6 +389,7 @@ li.nav-list-items{
     text-transform: capitalize;
     color: #000000;
     margin: 0;
+    text-align: left;
 }
 .women-title span{
     font-family: 'Playfair Disney';
@@ -639,16 +647,28 @@ li.footer-links{
 
     @media screen and (max-width: 1220px) {
         .hero-text-div h1{
-            font-size: 60px;
+            font-size: 65px;
+            line-height: 122%;
         }
         .hero-description{
             font-size: 20px;
             width: 480px;
         }
+        .hero-image-div{
+            height: 80%;
+        }
         .women-desc{
             width: 500px;
             font-size: 16px;
             line-height: 200%;
+        }
+
+        .blog-lead-container h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .build-image-div{
+            width: 46%;
         }
         .download-title{
             font-size:28px;
@@ -657,6 +677,66 @@ li.footer-links{
             font-size: 32px;
         }
         .footer{
-            padding: 90px 80px 45px 80px;
+            padding: 85px 70px 45px 70px;
         }
+        .women-text{
+            width: 45%;
+        }
+        .building-for-women{
+            justify-content: space-between;
+        }
+        /* footer ul */
+        .second- ul {
+            padding-left: 25px
+        }
+    }
+
+    @media screen and (max-width: 1058px) {
+        .footer{
+            padding: 60px 55px 40px 55px;
+        }
+        .download-title{
+            font: size 20px;
+            padding-bottom: 0;
+        }
+        .download-desc{
+            font-size: 24px;
+        }
+        .blog-lead-container h1{
+            margin-bottom: 0px;
+        }
+        .hero-description{
+            width: 80%;
+        }
+        .hero-text-div h1{
+            font-size: 50px;
+        }
+        .blog-text {
+            font-size: 16px;
+        }
+    
+
+    }
+
+    @media screen and (max-width: 992px) {
+        .build-image-div{
+            width: 45%;
+        }
+
+        .nav-list,
+        .sign-in-div{
+            visibility: hidden;
+            display: none;
+        }
+
+        .hamburger-div,
+        .hamburger-img{
+            width: 50px;
+            visibility: visible;
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        
     }
