@@ -16,9 +16,11 @@ const BlogLead = () => {
             </div>
             <div className="img-2 img-div">
                 <img src={require('../assets/blog-lead-images/image2.png')} />
-                <p className="blog-title">Insurance</p>
-                <p className="blog-text">Preserve your growth and get covered by our insurance plans ranging from health, cars, business, life insurance...</p>
-                <p className='view-more'> View more <img src={require ('../assets/blog-lead-images/viewmore-arrow.png')} /></p>
+                <div className='blog-text-wrapper'>
+                  <p className="blog-title">Insurance</p>
+                  <p className="blog-text">Preserve your growth and get covered by our insurance plans ranging from health, cars, business, life insurance...</p>
+                  <p className='view-more'> View more <img src={require ('../assets/blog-lead-images/viewmore-arrow.png')} /></p>
+                </div>
             </div>
         </div>
         

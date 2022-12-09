@@ -91,7 +91,6 @@ li.nav-list-items{
 
 .hero-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* tentative margin */
@@ -293,7 +292,7 @@ li.nav-list-items{
     height: 912px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
 
@@ -357,13 +356,11 @@ li.nav-list-items{
 /* building for women - testimonial */
 .building-for-women{
     width: 100%;
-    /* height: 794px; */
     background: #FFFFFF;
-
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 69px;
 
 
 }
@@ -373,13 +370,9 @@ li.nav-list-items{
 .build-image-div img{
     width: 100%;
 }
-.women-text{
-    width: 50%;
+.women-text-wrapper{
+    width: 40%;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .women-title {
@@ -390,6 +383,7 @@ li.nav-list-items{
     color: #000000;
     margin: 0;
     text-align: left;
+    width: 100%;
 }
 .women-title span{
     font-family: 'Playfair Disney';
@@ -401,6 +395,8 @@ li.nav-list-items{
     font-size: 19.9093px;
     line-height: 234.5%;
     color: #030027;
+
+    width: 100%;
     /* margin: 0; */
 }
 .swipe-testimonial{
@@ -487,6 +483,7 @@ li.nav-list-items{
 }
 
 .div-1-footer{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -514,6 +511,7 @@ li.nav-list-items{
 
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .newsletter-div input{
@@ -524,7 +522,7 @@ li.nav-list-items{
     
 }
 .newsletter-div button{
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     background-color: var(--primaryColor);
     border-radius: 8px 8px 0 0;
@@ -609,7 +607,7 @@ li.footer-links{
 
 .cookie-policy{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
     padding-bottom: 20px;
@@ -621,7 +619,7 @@ li.footer-links{
 .copyright{
     padding-top: 20px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     color: #DD2387;
     margin-top: 0;
@@ -634,7 +632,6 @@ li.footer-links{
     Media Queries
 
     ===== */
-    
     @media screen and (max-width: 1300px) {
         .navBar-container,
         .hero-container-partners,
@@ -645,6 +642,15 @@ li.footer-links{
         }
     }
 
+    @media screen and (max-width: 1250px) {
+        .building-for-women{
+            gap: 40px;
+        }
+        .women-text-wrapper{
+            width: 44%;
+            
+        }
+    }
     @media screen and (max-width: 1220px) {
         .hero-text-div h1{
             font-size: 65px;
@@ -667,6 +673,9 @@ li.footer-links{
             font-size: 60px;
             margin-bottom: 20px;
         }
+        .img-div .blog-text{
+            font-size: 18px;
+        }
         .build-image-div{
             width: 46%;
         }
@@ -678,12 +687,6 @@ li.footer-links{
         }
         .footer{
             padding: 85px 70px 45px 70px;
-        }
-        .women-text{
-            width: 45%;
-        }
-        .building-for-women{
-            justify-content: space-between;
         }
         /* footer ul */
         .second- ul {
@@ -714,15 +717,147 @@ li.footer-links{
         .blog-text {
             font-size: 16px;
         }
+
+        .women-text-wrapper{
+            width: 50%;
+            
+        }
     
 
     }
 
+        /* 
+    making the screen responsive, single column
+*/
+
     @media screen and (max-width: 992px) {
-        .build-image-div{
-            width: 45%;
+        .hero-container{
+            flex-direction: column-reverse;
+            text-align: center;
         }
 
+        .hero-image-div{
+            width: 75%;
+            margin-bottom: 3rem;
+        }
+        .hero-text-div{
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text-div h1{
+            font-size: 70px;
+            width: 100%;
+            text-align: center;
+        }
+        .hero-description{
+            font-size: 24px;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .blog-lead-container{
+            align-items: center;
+        }
+        .blog-lead-container h1{
+            font-size: 50px;
+            text-align: center;
+            width: 90%;
+            line-height: 150%;
+        }
+
+        .business-here {
+            align-items: center;
+        }
+        .business-here p{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .building-for-women{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .build-image-div{
+            width: 70%;
+        }
+
+        .women-title{
+            text-align: center;
+        }
+        .women-desc{
+            text-align: center;
+            font-size: 20px;
+            width: 100%;
+        }
+        .women-text-wrapper{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* footer */
+        .footer{
+            height: auto;
+            align-items: center;
+        }
+        .footer-links{
+            font-size: 14px;
+        }
+        .div-1-footer{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .first- {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .logo-white{
+            width: 25%;
+        }
+
+        .second-{
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        .third-{
+            display: flex;
+            justify-content:space-between;
+            align-items: baseline;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .text-footer{
+          text-align: center;
+          /* font-size: 14px; */
+        }
+        .install-apps{
+            flex-direction: row;
+        }
+        .cookie-policy{
+            width: 100%;
+
+
+        }
+        .business-here{
+            padding-top: 20px;
+        }
+        .business-here p{
+            text-align: center;
+            width: 100%;
+        }
+
+
+        /* for nav-bar */
         .nav-list,
         .sign-in-div{
             visibility: hidden;
@@ -737,6 +872,312 @@ li.footer-links{
         }
     }
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 820px) {
+       
+            .blog-img-wrapper{
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+            }
+            .img-div{
+                width: 80%;
+            }
+            .blog-text-wrapper{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .blog-text{
+                margin: 0;
+                text-align: center;
+            }
+            .download-section{
+                justify-content: center;
+            }
+            .download-images img{
+                width: 50%;
+                
+            }
+            .download-images{
+                width: 40%;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 1.3em;
+                flex-direction: column;
+                
+            }
+            .download-text{
+                width: 50%;
+            }
+            .download-title{
+                font-size: 24px;
+            }
+            .download-desc{
+                font-size: 20px;
+            }
         
+    }
+
+    @media screen and (max-width: 689px) {
+        .hero-text-div h1{
+            font-size: 45px;
+            width: 100%;
+        }
+        .hero-description{
+            font-size: 20px;
+        }
+        .women-desc{
+            font-size: 18px;
+        }
+        .first- p{
+            font-size: 18px;
+            
+        }
+        .newsletter-div {
+            width: 40%;
+        }
+        .footer{
+            padding: 40px 30px ;
+        }
+        .blog-lead-container h1{
+            font-size: 40px;
+        }
+        .imageSlider-text p{
+            font-size: 35px;
+            width: 80%;
+        }
+
+        .download-title{
+            font-size: 20px;
+        }
+        .download-desc{
+            font-size: 18px;
+        }
+        .imageSlider-text{
+            width: fit-content;
+        }
+    }
+
+
+    @media screen and (max-width: 645px) {
+        .hero-text-div h1{
+            font-size: 40px;
+            width: 100%;
+        }
+        .business-here p{
+            font-size: 32px;
+        }
+        .women-desc{
+            font-size: 16px;
+        }
+        .download-title{
+            font-size: 18px;
+        }
+        .download-desc{
+            font-size: 16px;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 645px) {
+        .hero-container{
+            margin-bottom: 0;
+        }
+        .partners{
+            align-items: center;
+            padding-bottom: 80px;
+        }
+        .images-partner{
+            width: 85%;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding-top: 50px;
+        }
+        .images-partner img{
+            width: 25%;
+        }
+        .newsletter-div{
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .women-title{
+            font-weight: 38px;
+        }
+        .imageSlider-text p{
+            font-size: 28px;
+        }
+        .first-{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 27px;
+        }
+        .third-{
+            padding-left: 29px;
+        }
+        .newsletter-div {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        .download-section{
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            padding: 25px 0;
+        }
+        .download-images{
+            flex-direction: row;
+            }
+        .download-text{
+            width: 100%;
+        }
+        .download-title,
+        .download-desc{
+            text-align: center;
+        }
+        .imageSlider-text p{
+            font-size: 24px;
+            width: 70%;
+        }
+
+        .first- p{
+            width: 100%;
+        }
+        .women-text-wrapper{
+            width: 90%;
+            
+        }
+        .imageSlider-container{
+            height: max-content;
+            gap: 30px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .blog-lead-container h1{
+            font-size: 32px;
+            width: 90%;
+        }
+        .hero-description{
+            font-size: 16px;
+        }
+        .business-here p{
+            width: 100%;
+        }
+        .install-apps {
+            display: flex;
+            flex-direction: column;
+        }
+        .third-{
+            padding-right: 8px;
+        }
+
+        
+
+
+    }
+    
+
+    @media screen and (max-width: 550px) {
+        .brand-awareness-div{
+            width: fit-content;
+            padding: 0 8px;
+        }
+        .brand-awareness-div p{
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: 520px) {
+        .images-partner{
+            padding-top: 20px;
+        }
+
+        .hero-text-div h1{
+            font-size: 32px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        .imageSlider-text p{
+                font-size: 20px;
+                width: 80%;
+    
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        .blog-lead-container h1,
+        .hero-text-div h1{
+            font-size: 28px;
+        }
+        /* .second-{
+            flex-direction: column;
+        } */
+
+        .first-,
+        .second- ul,
+        .third-{
+            padding-left: 0;
+        }
+        .text-footer p{
+            font-size: 12px;
+        }
+        .cookie-policy{
+            padding: 0;
+        }
+        .copyright{
+            padding: 0;
+        }
+
+        .hero-description{
+            font-size: 14px;
+        }
+        .logo-white{
+            padding: 0;
+        }
+
+        .business-here p{
+            font-size: 28px;
+        }
+
+    }
+    @media screen and (max-width: 420px) {
+        .women-desc{
+            font-size: 14px;
+        }
+        .download-section{
+            margin: 120px 20px;
+        }
+        .women-title{
+            font-size: 38px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+
+        body{
+            min-width: 400px;
+        }
+        .blog-lead-container h1{
+            font-size: 28px;
+            width: 100%;
+        }
+        .hero-text-div h1{
+            width: 90%;
+        }
+        .brand-awareness-div{
+            padding: 0;
+        }
+        .brand-awareness-div p{
+            width: 90%;
+        }
+        .hero-text-div h1{
+            width: 100%;
+            font-size: 26px;
+        }
     }
