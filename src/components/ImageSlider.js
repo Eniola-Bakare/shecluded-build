@@ -36,6 +36,7 @@ const ImageSlider = () => {
       </div>
     
 
+
       {/* building for women - testimonial div */}
       <div className="building-for-women">
         <div className='build-image-div'>
@@ -60,7 +61,7 @@ const ImageSlider = () => {
       </div>
 
       {/* Call to download */}
-      <div className="download-section">
+      {/* <div className="download-section">
         <div className="download-text">
           <p className='download-title'>START BUILDING TODAY</p>
           <p className='download-desc'>Download the Shecluded app</p>
@@ -69,7 +70,7 @@ const ImageSlider = () => {
           <img src={require ('../assets/googlePlay.png')} alt="Google Download Icon" />
            <img src={require ('../assets/appleStore.png')} alt="Applestore Icon" />
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

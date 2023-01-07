@@ -6,6 +6,7 @@ import BlogLead from './components/BlogLead';
 import BusinessHere from './components/BusinessHere';
 import ImageSlider from './components/ImageSlider';
 import Footer from './components/Footer';
+import SheHero from './components/SheHero';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BlogLead />
       <BusinessHere />
       <ImageSlider />
+      <SheHero />
       <Footer />
     </div>
   );

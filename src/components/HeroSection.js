@@ -17,8 +17,11 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="partners">
-        <div>
-          <p>OUR PARTNERS</p> 
+        <div className='ourPartners'>
+          <p>OUR PARTNERS
+          {/* <div className='partners-divider one'></div> */}
+          </p> 
+          <div className='partners-divider one'></div>
         </div>
         <div className="images-partner">
           <img src={require ('../assets/partners-logo/nft.png')} />
@@ -28,6 +31,7 @@ const HeroSection = () => {
           <img src={require ('../assets/partners-logo/walmart.png')} />
           <img src={require ('../assets/partners-logo/milesstone.png')} />
         </div>
+        <div className='partners-divider two'></div>
       </div>
     </div>
    
