@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/shecluded-build/static/css/main.b0851753.css",
-    "main.js": "/shecluded-build/static/js/main.d4d5de86.js",
+    "main.css": "/shecluded-build/static/css/main.79488568.css",
+    "main.js": "/shecluded-build/static/js/main.c6ff7a4f.js",
     "static/js/787.c3fb59f3.chunk.js": "/shecluded-build/static/js/787.c3fb59f3.chunk.js",
     "static/media/businessHere.png": "/shecluded-build/static/media/businessHere.7d22aa1bf5d0acda01f9.png",
     "static/media/forWomen.png": "/shecluded-build/static/media/forWomen.604e1af8d44a9097c76d.png",
+    "static/media/hero-image.png": "/shecluded-build/static/media/hero-image.9ee49268288f7ad23ac9.png",
     "static/media/image2.png": "/shecluded-build/static/media/image2.5074a0cf78a4c707869c.png",
-    "static/media/hero-image.png": "/shecluded-build/static/media/hero-image.9467304dd510f86ee80b.png",
     "static/media/image1.png": "/shecluded-build/static/media/image1.dbe5e394b19f6b57f951.png",
     "static/media/image3.png": "/shecluded-build/static/media/image3.62e5a5a25f8573586366.png",
+    "static/media/shehero.png": "/shecluded-build/static/media/shehero.d9d2e5080585fd0fae8f.png",
     "static/media/image4.png": "/shecluded-build/static/media/image4.ba9c163880c07b10e234.png",
     "static/media/image5.png": "/shecluded-build/static/media/image5.90511586aaddaee8775d.png",
     "static/media/image6.png": "/shecluded-build/static/media/image6.78bd92ed7b28a1bd232d.png",
@@ -16,12 +17,12 @@
     "static/media/google4startups.png": "/shecluded-build/static/media/google4startups.7b9462a2f9b05c001909.png",
     "static/media/logo.svg": "/shecluded-build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/shecluded-build/index.html",
-    "main.b0851753.css.map": "/shecluded-build/static/css/main.b0851753.css.map",
-    "main.d4d5de86.js.map": "/shecluded-build/static/js/main.d4d5de86.js.map",
+    "main.79488568.css.map": "/shecluded-build/static/css/main.79488568.css.map",
+    "main.c6ff7a4f.js.map": "/shecluded-build/static/js/main.c6ff7a4f.js.map",
     "787.c3fb59f3.chunk.js.map": "/shecluded-build/static/js/787.c3fb59f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0851753.css",
-    "static/js/main.d4d5de86.js"
+    "static/css/main.79488568.css",
+    "static/js/main.c6ff7a4f.js"
   ]
 }
