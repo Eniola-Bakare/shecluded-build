@@ -46,14 +46,15 @@ const Footer = () => {
 							<button><img src={require ('../assets/footer/linkedIn.png')} /> </button>
 						</div>
 					</div>
-
-					<div className="install-div">
+					
+					{/* Hidden Call to Sownload Section */}
+					{/* <div className="install-div">
 						<p> Install App </p>
 						<div className="install-apps">
 							<img src={require ('../assets/footer/googlePlay.png')} alt="Google Play download button" />
 							<img src={require ('../assets/footer/appStore.png')} alt="Apple Store download button" />
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className="div-2-footer">
